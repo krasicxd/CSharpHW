@@ -4,7 +4,7 @@
 
 int[] CreateRandomArray()
 {
-    int size = new Random().Next(1,10);
+    int size = new Random().Next(1,11);
     int[] array = new int[size];
     for (int i = 0; i < array.Length; i++)
     {
