@@ -4,7 +4,7 @@
 
 int[] CreateRandomArray()
 {
-    int size = new Random().Next(0,10);
+    int size = new Random().Next(1,10);
     int[] array = new int[size];
     for (int i = 0; i < array.Length; i++)
     {
@@ -15,13 +15,14 @@ int[] CreateRandomArray()
 void PrintArray(int[] array)
 {
     Console.Write("[");
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length - 1; i++)
     {     
-        Console.Write(array[i] + ", ");
+        Console.Write($"{array[i]}, ");
     }
     Console.Write(array[array.Length - 1]);
     Console.Write("]");
 }
+
 Console.WriteLine();
 PrintArray(CreateRandomArray());
 Console.WriteLine();
