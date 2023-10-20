@@ -17,6 +17,7 @@ int NumbersAbove0Count(int [] array)
 
 Console.WriteLine("Type your numbers: ");
 int[] array = Array.ConvertAll(Console.ReadLine().Split(","), int.Parse);
+
 Console.WriteLine($"There are {NumbersAbove0Count(array)} numbers above zero");
 
 
