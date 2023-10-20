@@ -10,7 +10,7 @@ void ShowNumbers(int n, int m)
     {
         ShowNumbers(max, min + 1);
     }
-    Console.Write($"{min} ");
+    Console.Write($"{min} "); // При использовании "\b" или var/string применяется к каждому значению n;
 }
 Console.Write("Type your number: ");
 int num = Convert.ToInt32(Console.ReadLine());
